@@ -1,0 +1,32 @@
+.message{
+    width: 80%;
+    display:flex;
+    align-items: center;
+    
+    p{
+        background-color: 	#a7a7a7;
+        padding: 10px 8px;
+        border-radius: 8px;
+        max-width: 100%;
+        word-break: break-all;
+    }
+    span{
+        margin: 0 1em;  
+        color:gray;
+        font-size:110%;
+    }
+}
+.not-me{
+    flex-direction: row;
+}
+
+.me{
+    flex-direction: row-reverse;
+    margin-left:auto;
+    p{
+        background-color:#0275d8;
+    }
+    span{
+        color:#0275d8;
+    }
+}

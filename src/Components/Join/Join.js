@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import io from 'socket.io-client'
+import React, { useState } from 'react'
+
 import { Link } from 'react-router-dom'
 import './Join.scss'
 
 export default function Join() {
     const [name, setName] = useState('')
     const [room, setRoom] = useState('')
-    useEffect(() => {
-        var socket = io('localhost:5000')
-        
-    },)
+    
     console.log(name, room)
     return (
         <div className='joinOuterContainer'>

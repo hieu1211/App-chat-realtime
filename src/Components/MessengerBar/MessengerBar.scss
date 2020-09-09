@@ -1,0 +1,63 @@
+.messenger-bar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    background-color: #f1f1f1;
+
+    .header{
+        width: 100%;
+        height: 15%;
+        background-color: #0275d8;
+        color:white;
+        padding-left:1.5em;
+        padding-top:3px;
+        box-sizing: border-box;
+        p::after{
+            content:"asd";
+            width: 3px;
+            height: 3px;
+            color:green;
+        }
+    }
+    .scroll{
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+        overflow-y:auto;
+        .messages{
+            width: auto;
+            height: auto;
+            padding:1em 1.5em; 
+        }
+    }
+   
+    .input{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        border: 1px solid gray;
+        input{
+            display: inline-block;
+            width: 80%;
+            font-size:110%;
+            padding:0 15px;
+        }
+        input:focus{
+            outline:none;
+        }
+        button{
+            width: 20%;
+            background-color:#0275d8;
+            color:white;
+            font-size:1hv;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .messenger-bar{
+        width: 100%;
+    }
+  }
