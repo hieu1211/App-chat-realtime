@@ -1,18 +1,27 @@
 .messenger-bar{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 50%;
+    width: 400px;
+    height: 500px;
     background-color: #f1f1f1;
+    overflow: hidden;
+
 
     .header{
         width: 100%;
         height: 15%;
         background-color: #0275d8;
         color:white;
-        padding-left:1.5em;
-        padding-top:3px;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        font-size:1.3rem;
+        font-weight: bold;
+        padding-left:2rem;
+        span{
+            color:#191970;
+            font-size:110%;
+        }
         p::after{
             content:"asd";
             width: 3px;
@@ -59,5 +68,11 @@
 @media only screen and (max-width: 900px) {
     .messenger-bar{
         width: 100%;
+        height: 100vh;
+        .input{
+            height: 60px;
+            
+        }
     }
-  }
+    
+}

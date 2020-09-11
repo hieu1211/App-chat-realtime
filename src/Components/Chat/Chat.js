@@ -30,6 +30,12 @@ export default function Chat({location}) {
         })
         },[messages])
 
+    useEffect(() => {
+        socket.on("list-users",(data)=>{
+            setListUsers(data);
+        })
+        }, [listUsers])
+
     const sendMessage = (mes)=>{
         socket.emit("messenger",mes);
         setMessages([...messages,{name,mes}])

@@ -15,7 +15,7 @@ export default function MessengersBar({name, room,messages,sendMessage}) {
     return (
         <div className="messenger-bar">
             <div className="header">
-                <h4>{room}</h4>
+                <h4>Room <span>{room}</span></h4>
                 <div className="green-light"/>
             </div>
             <ScrollToBottom className="scroll">

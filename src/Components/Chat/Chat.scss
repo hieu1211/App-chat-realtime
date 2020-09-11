@@ -1,8 +1,16 @@
 .chat-container{
-    display: flex;
     height: 100vh;
+    background-color:#414A4C;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#414A4C;
-
+    overflow: hidden;
+    
 }
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+

@@ -1,0 +1,78 @@
+.listusers-container{
+    width: 100px;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .menu{
+        display: none;
+        transition: all 0.5s ease-in;
+
+    }
+    .listusers{
+        background-color:#d9b48fff;
+        flex-grow: 1;
+        margin-top:57px;
+        transition: all 0.5s ease-in;
+        box-sizing: border-box;
+
+        .title{
+            padding:10px 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            text-align: center;
+            border-bottom:2px solid rgb(139, 87, 96);
+        }
+
+        p{
+            font-size:1.5rem;
+            padding:20px;
+            i{
+                margin-right:10px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .listusers-container{
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+
+        
+        
+        .icon{
+            padding:0;
+            .hide{
+                transform:translateX(135px);
+            }
+        }
+
+        .listusers{
+            margin:0;
+            padding: 0;
+            .title{
+                padding:32px 0;
+        }
+
+        }
+        .hide{
+            transform:translateX(100%);
+        }
+        .menu{
+            display:inline;
+            position: absolute;
+            font-size:30px;
+            top:25px;
+            right:165px;
+            z-index: 10;
+        }
+    }
+    
+    
+  }
